@@ -45,74 +45,74 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
 
 - [ ] **Uso de HTML semântico**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [HTML semântico](https://curriculum.laboratoria.la/pt/topics/html/02-html5/02-semantic-html)
-  * [Semantics in HTML - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-</p></details>
+  - [HTML semântico](https://curriculum.laboratoria.la/pt/topics/html/02-html5/02-semantic-html)
+  - [Semantics in HTML - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+  </p></details>
 
 ### CSS
 
 - [ ] **Uso de seletores de CSS**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Intro a CSS](https://curriculum.laboratoria.la/pt/topics/css/01-css/01-intro-css)
-  * [CSS Selectors - MDN](https://developer.mozilla.org/pt_BR/docs/Web/CSS/CSS_Selectors)
-</p></details>
+  - [Intro a CSS](https://curriculum.laboratoria.la/pt/topics/css/01-css/01-intro-css)
+  - [CSS Selectors - MDN](https://developer.mozilla.org/pt_BR/docs/Web/CSS/CSS_Selectors)
+  </p></details>
 
 - [ ] **Empregar o modelo de caixa (box model): borda, margem, preenchimento**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Modelo de Caixa e Display](https://curriculum.laboratoria.la/pt/topics/css/01-css/02-boxmodel-and-display)
-  * [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-  * [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  * [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
-  * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
-</p></details>
+  - [Modelo de Caixa e Display](https://curriculum.laboratoria.la/pt/topics/css/01-css/02-boxmodel-and-display)
+  - [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
+  - [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+  - [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
+  - [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
+  </p></details>
 
 - [ ] **Uso de flexbox em CSS**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [A Complete Guide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  * [Flexbox Froggy](https://flexboxfroggy.com/#pt-br)
-  * [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
-</p></details>
+  - [A Complete Guide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  - [Flexbox Froggy](https://flexboxfroggy.com/#pt-br)
+  - [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+  </p></details>
 
 ### Web APIs
 
 - [ ] **Uso de seletores de DOM**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Modificando o DOM](https://curriculum.laboratoria.la/pt/topics/browser/02-dom/03-1-dom-methods-selection)
-  * [Introdução ao DOM - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-  * [Locating DOM elements using selectors - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-</p></details>
+  - [Modificando o DOM](https://curriculum.laboratoria.la/pt/topics/browser/02-dom/03-1-dom-methods-selection)
+  - [Introdução ao DOM - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
+  - [Locating DOM elements using selectors - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
+  </p></details>
 
 - [ ] **Manipulação de eventos de DOM**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Introdução a eventos - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events)
-  * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
-  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/removeEventListener)
-  * [Objeto Event](https://developer.mozilla.org/pt-BR/docs/Web/API/Event)
-</p></details>
+  - [Introdução a eventos - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events)
+  - [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
+  - [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/removeEventListener)
+  - [Objeto Event](https://developer.mozilla.org/pt-BR/docs/Web/API/Event)
+  </p></details>
 
 - [ ] **Manipulação dinâmica de DOM**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Introdução ao DOM](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-  * [Node.appendChild() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild)
-  * [Document.createElement() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement)
-  * [Document.createTextNode()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createTextNode)
-  * [Element.innerHTML - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML)
-  * [Node.textContent - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent)
-</p></details>
+  - [Introdução ao DOM](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
+  - [Node.appendChild() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild)
+  - [Document.createElement() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement)
+  - [Document.createTextNode()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createTextNode)
+  - [Element.innerHTML - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML)
+  - [Node.textContent - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent)
+  </p></details>
 
 ### JavaScript
 
@@ -120,72 +120,72 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
 
 - [ ] **Manipular arrays (filter, map, sort, reduce)**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Arrays](https://curriculum.laboratoria.la/pt/topics/javascript/04-arrays)
-  * [Array - MDN](https://developer.mozilla.org//pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/)
-  * [Array.prototype.sort() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-  * [Array.prototype.forEach() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-  * [Array.prototype.map() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-  * [Array.prototype.filter() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-  * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-</p></details>
+  - [Arrays](https://curriculum.laboratoria.la/pt/topics/javascript/04-arrays)
+  - [Array - MDN](https://developer.mozilla.org//pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/)
+  - [Array.prototype.sort() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+  - [Array.prototype.forEach() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+  - [Array.prototype.map() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+  - [Array.prototype.filter() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+  - [Array.prototype.reduce() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+  </p></details>
 
 - [ ] **Manipular objects (key | value)**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Objetos em JavaScript](https://curriculum.laboratoria.la/pt/topics/javascript/05-objects/01-objects)
-</p></details>
+  - [Objetos em JavaScript](https://curriculum.laboratoria.la/pt/topics/javascript/05-objects/01-objects)
+  </p></details>
 
 - [ ] **Variáveis (declaração, atribuição, escopo)**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Valores, tipos de dados e operadores](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/01-values-variables-and-types)
-  * [Variáveis](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/02-variables)
-</p></details>
+  - [Valores, tipos de dados e operadores](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/01-values-variables-and-types)
+  - [Variáveis](https://curriculum.laboratoria.la/pt/topics/javascript/01-basics/02-variables)
+  </p></details>
 
 - [ ] **Uso de condicionais (if-else, switch, operador ternário)**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Estruturas condicionais e repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/01-conditionals-and-loops)
-  * [Tomando decisões no seu código — condicionais - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
-</p></details>
+  - [Estruturas condicionais e repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/01-conditionals-and-loops)
+  - [Tomando decisões no seu código — condicionais - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
+  </p></details>
 
 - [ ] **Uso de laços (for, for..of, while)**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Laços (Loops)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/02-loops)
-  * [Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
-</p></details>
+  - [Laços (Loops)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/02-loops)
+  - [Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
+  </p></details>
 
 - [ ] **Uso de funções (parâmetros, argumentos, valor de retorno)**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Funções (controle de fluxo)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/03-functions)
-  * [Funções clássicas](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/01-classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/02-arrow)
-  * [Funções — blocos reutilizáveis de código - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Functions)
-</p></details>
+  - [Funções (controle de fluxo)](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/03-functions)
+  - [Funções clássicas](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/01-classic)
+  - [Arrow Functions](https://curriculum.laboratoria.la/pt/topics/javascript/03-functions/02-arrow)
+  - [Funções — blocos reutilizáveis de código - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Functions)
+  </p></details>
 
 - [ ] **Testes unitários**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Introdução ao Jest - Documentação oficial](https://jestjs.io/docs/pt-BR/getting-started)
-</p></details>
+  - [Introdução ao Jest - Documentação oficial](https://jestjs.io/docs/pt-BR/getting-started)
+  </p></details>
 
 - [ ] **Módulos de ECMAScript (ES modules)**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [import - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
-  * [export - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-</p></details>
+  - [import - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
+  - [export - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
+  </p></details>
 
 - [ ] **Uso de linter (ESLINT)**
 
@@ -205,10 +205,10 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
 
 - [ ] **GitHub: Implantação com GitHub Pages**
 
-  <details><summary>Links</summary><p>
+    <details><summary>Links</summary><p>
 
-  * [Site oficial do GitHub Pages](https://pages.github.com/)
-</p></details>
+  - [Site oficial do GitHub Pages](https://pages.github.com/)
+  </p></details>
 
 - [ ] **GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**
 
@@ -438,7 +438,7 @@ podem te ajudar:
 Quando estiver pronta para codar, te sugerimos começar desta maneira:
 
 1. Uma das integrantes da equipe deve realizar um
-[fork](https://help.github.com/articles/fork-a-repo/) do repositório de sua
+   [fork](https://help.github.com/articles/fork-a-repo/) do repositório de sua
    turma (a equipe de formação fornecerá o link). A outra integrante da dupla
    deve fazer um fork **a partir do repositório de sua companheira** e
    [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um `remote`
@@ -503,14 +503,14 @@ Quando estiver pronta para codar, te sugerimos começar desta maneira:
 - [ ] Passa pelo linter (`npm run pretest`)
 - [ ] Passa pelos testes (`npm test`)
 - [ ] Testes unitários cobrem um mínimo de 70% de statements, functions, lines e
-  branches.
+      branches.
 - [ ] Inclui uma _definição de produto_ clara e informativa no `README.md`.
 - [ ] Inclui histórias de usuário no `README.md`.
 - [ ] Inclui rascunho da solução (protótipo de baixa fidelidade) no `README.md`.
 - [ ] Inclui _Desenho da Interface de Usuário_ (protótipo de alta fidelidade)
       no `README.md`.
 - [ ] Inclui uma lista de problemas detectados nos testes de usabilidade no
-  `README.md`.
+      `README.md`.
 - [ ] UI: Mostra cartas _embaralhadas_ corretamente.
 - [ ] UI: Permite o usuário _virar_ as cartas de 2 em 2.
 - [ ] UI: Deixa os pares que foram formados virados.
