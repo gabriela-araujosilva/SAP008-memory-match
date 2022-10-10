@@ -1,4 +1,6 @@
-//
+import data from '../data/webdev/webdev.js';
+
+
 // Para incluir los diferentes sets de cartas podemos _importar_ el archivo
 // JavasSript que contenga el `export` correspondiente...
 //
@@ -14,7 +16,7 @@
 //   .catch(console.error);
 //
 
-const App = () => {
+/*const App = () => {
   const el = document.createElement('div');
 
   el.className = 'App';
@@ -23,4 +25,27 @@ const App = () => {
   return el;
 };
 
-export default App;
+export default App;*/
+
+const dataDev = data.items;
+
+
+const printCards = () => {
+  const container = document.createElement('div');
+  dataDev.forEach((personagem) => {
+    container.innerHTML +=`
+                                <div>Name: ${personagem.image}</div>
+                              `;
+    //container.addEventListener('click', () => modal(personagem));
+    /*document.getElementById('print-cards').appendChild(container);*/
+    
+  });
+  return container;
+};
+
+export default printCards;
+
+printCards(dataDev);
+
+
+  
