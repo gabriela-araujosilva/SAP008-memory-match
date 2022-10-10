@@ -1,0 +1,15 @@
+.quadro-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    background-color: #810000;
+    border: 4px solid #FFFFFF;
+}
+
+.quadro-imagem {
+    height: 50px;
+    width: 50px;
+}
