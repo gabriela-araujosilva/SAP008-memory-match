@@ -15,6 +15,6 @@ module.exports = {
         "no-console": "warn",
         "import/extensions": 0,
         "semi": ["error", "always"],
-        "quotes": ["error", "single"]
+        "quotes": ["error", "double"]
     }
-}
+};

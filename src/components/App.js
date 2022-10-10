@@ -1,4 +1,4 @@
-import data from '../data/webdev/webdev.js';
+import data from "../data/webdev/webdev.js";
 
 
 // Para incluir los diferentes sets de cartas podemos _importar_ el archivo
@@ -30,22 +30,31 @@ export default App;*/
 const dataDev = data.items;
 
 
-const printCards = () => {
-  const container = document.createElement('div');
+/*const printCards = () => {
+  const container = document.createElement("div");
   dataDev.forEach((personagem) => {
     container.innerHTML +=`
-                                <div>Name: ${personagem.image}</div>
+    <div class="quadro-card">
+    <div>
+        <img class="quadro-imagem" src="${personagem.image}">
+    </div>
+    </div>
+    
                               `;
-    //container.addEventListener('click', () => modal(personagem));
-    /*document.getElementById('print-cards').appendChild(container);*/
+  
     
   });
   return container;
 };
 
-export default printCards;
+export default printCards;*/
 
-printCards(dataDev);
+
+
+
+
+
+
 
 
   
