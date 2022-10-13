@@ -1,13 +1,13 @@
-
 import data from "./../../data/webdev/webdev.js";
 
 const dataDev = data.items;
 
 const btnPlainAgain = () => {
-  const btnPrint = document.createElement("button");
+  const btnPrint = document.createElement("div");
   btnPrint.innerHTML = `
-   <button type="button" class="btn">Jogar Novamente</button>
+   <button type="button" class="botão">Jogar Novamente</button>
   `;
+
   return btnPrint;
 };
 
@@ -18,7 +18,7 @@ const printCards = () => {
       allCards+=`
       <div class="quadro-card">
       <div>
-          <img class="quadro-imagem" src="${personagem.image}">
+          <img class="quadro-imagem" src="${personagem.image}" id="${personagem.id}">
       </div>
       </div> 
     `;
