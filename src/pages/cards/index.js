@@ -8,26 +8,26 @@ const btnPlainAgain = () => {
   btnPrint.innerHTML = `
    <button type="button" class="btn">Jogar Novamente</button>
   `;
-   return btnPrint;
-
+  
+  return btnPrint;
 };
 
 const printCards = () => {
-  const container = document.createElement("div");
-  let allCards = "";
-  dataDev.map((personagem) => {
-    allCards+=`
-    <div class="quadro-card">
-    <div>
-        <img class="quadro-imagem" src="${personagem.image}">
-    </div>
-    </div> 
-  `;
-  });
+    const container = document.createElement("div");
+    let allCards = "";
+    dataDev.map((personagem) => {
+      allCards+=`
+      <div class="quadro-card">
+      <div>
+          <img class="quadro-imagem" src="${personagem.image}">
+      </div>
+      </div> 
+    `;
+    });
 
-  container.innerHTML = allCards + allCards;
+    container.innerHTML = allCards + allCards;
 
-  return container;
+    return container;
 };
 
 export {printCards, btnPlainAgain};
