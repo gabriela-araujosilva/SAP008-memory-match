@@ -2,33 +2,37 @@ import data from "./../../data/webdev/webdev.js";
 
 const dataDev = data.items;
 
-const btnPlainAgain = () => {
-  const btnPrint = document.createElement("div");
-  btnPrint.innerHTML = `
-   <button type="button" class="botão">Jogar Novamente</button>
-  `;
-
-  return btnPrint;
-};
+const divElements = () => {
+    const printElements = document.createElement("div");
+    printElements.innerHTML = `
+   <div class="elementos-container">
+    <button type="button" class="botão" id="botão-shuffle">Jogar Novamente</button>
+     <form action="/pagina-processa-dados-do-form" method="post">
+        <div>
+          <label class="text-redefinir-jogador">Redefinir jogador</label>
+          <input type="text" id="input-redefinir-jogador"/>
+        </div>
+    </form>
+    </div>  
+    `;
+  return printElements;
+}; 
 
 const printCards = () => {
     const container = document.createElement("div");
     let allCards = "";
     dataDev.map((personagem) => {
-      allCards+=`
-      <div class="quadro-card">
-      <div>
+        allCards+=`
+        <div class="quadro-card">
+        <div>
           <img class="quadro-imagem" src="${personagem.image}" id="${personagem.id}">
-      </div>
-      </div> 
-    `;
+        </div>
+        </div> 
+      `;
     });
 
-    container.innerHTML = allCards + allCards;
-
-    return container;
+  container.innerHTML = allCards + allCards;
+  return container;
 };
 
-export {printCards, btnPlainAgain};
-
-
+export {printCards, divElements, dataDev};
