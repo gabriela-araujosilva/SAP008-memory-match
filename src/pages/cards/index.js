@@ -13,18 +13,21 @@ const btnPlainAgain = () => {
 };
 
 const printCards = () => {
-    const container = document.createElement("div");
-    dataDev.forEach((personagem) => {
-      container.innerHTML +=`
-      <div class="quadro-card">
-      <div>
-          <img class="quadro-imagem" src="${personagem.image}">
-      </div>
-      </div> 
-    `;
-    });
+  const container = document.createElement("div");
+  let allCards = "";
+  dataDev.map((personagem) => {
+    allCards+=`
+    <div class="quadro-card">
+    <div>
+        <img class="quadro-imagem" src="${personagem.image}">
+    </div>
+    </div> 
+  `;
+  });
 
-    return container;
+  container.innerHTML = allCards + allCards;
+
+  return container;
 };
 
 export {printCards, btnPlainAgain};
