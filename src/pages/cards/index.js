@@ -7,10 +7,8 @@ const btnPlainAgain = () => {
   const btnPrint = document.createElement("button");
   btnPrint.innerHTML = `
    <button type="button" class="btn">Jogar Novamente</button>
-   `;
-   console.log(btnPrint);
-   return btnPrint;
-
+  `;
+  return btnPrint;
 };
 
 const printCards = () => {
