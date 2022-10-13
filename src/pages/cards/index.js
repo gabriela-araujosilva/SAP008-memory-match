@@ -3,6 +3,15 @@ import data from "./../../data/webdev/webdev.js";
 
 const dataDev = data.items;
 
+const btnPlainAgain = () => {
+  const btnPrint = document.createElement("button");
+  btnPrint.innerHTML = `
+   <button type="button" class="btn">Jogar Novamente</button>
+  `;
+   return btnPrint;
+
+};
+
 const printCards = () => {
     const container = document.createElement("div");
     dataDev.forEach((personagem) => {
@@ -18,6 +27,6 @@ const printCards = () => {
     return container;
 };
 
-export default printCards;
+export {printCards, btnPlainAgain};
 
 
