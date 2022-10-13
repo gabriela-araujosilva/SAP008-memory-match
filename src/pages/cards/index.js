@@ -7,6 +7,7 @@ const btnPlainAgain = () => {
   btnPrint.innerHTML = `
    <button type="button" class="botão">Jogar Novamente</button>
   `;
+
   return btnPrint;
 };
 
@@ -18,7 +19,6 @@ const printCards = () => {
       <div class="quadro-card">
       <div>
           <img class="quadro-imagem" src="${personagem.image}" id="${personagem.id}">
-          
       </div>
       </div> 
     `;
