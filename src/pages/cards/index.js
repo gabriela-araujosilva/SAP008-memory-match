@@ -8,10 +8,8 @@ const divElements = () => {
    <div class="elementos-container">
     <button type="button" class="btn" id="btn-shuffle">Jogar Novamente</button>
      <form>
-        
           <label class="text-redefinir-jogador">Redefinir jogador</label>
           <input type="text" id="input-redefinir-jogador"/>
-    
     </form>
     </div>  
     `;
