@@ -7,7 +7,7 @@ const divElements = () => {
     printElements.innerHTML = `
    <div class="elementos-container">
     <button type="button" class="botão" id="botão-shuffle">Jogar Novamente</button>
-     <form action="/pagina-processa-dados-do-form" method="post">
+     <form>
         <div>
           <label class="text-redefinir-jogador">Redefinir jogador</label>
           <input type="text" id="input-redefinir-jogador"/>
