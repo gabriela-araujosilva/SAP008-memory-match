@@ -1,4 +1,5 @@
 import data from "./../../data/webdev/webdev.js";
+import { shuffle } from "../logic.js";
 
 const dataDev = data.items;
 
@@ -12,11 +13,17 @@ const divElements = () => {
           <input type="text" id="input-redefinir-jogador"/>
     </form>
     </div>  
-    `;
+  `;
   
-
+  const btnShuffle = printElements.querySelector("#btn-shuffle");
+  btnShuffle.addEventListener("click", (e) => {
+    e.preventDefault();
+    shuffle(dataDev);
+  });
+  
   return printElements;
 };
+
 
 const printCards = () => {
   const container = document.createElement("div");
