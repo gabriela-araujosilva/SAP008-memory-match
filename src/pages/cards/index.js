@@ -31,8 +31,6 @@ const divElements = () => {
     e.preventDefault();
     const shuffledItems = shuffle(initialItems);
     printCards(shuffledItems);
-    console.log(shuffledItems);
-   
   });
   
   return printElements;
