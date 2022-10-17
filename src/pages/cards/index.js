@@ -1,7 +1,7 @@
 import data from "./../../data/webdev/webdev.js";
 import { shuffle } from "../logic.js";
 
-const dataDev = data.items;
+const initialItems = data.items;
 
 const divElements = () => {
   const printElements = document.createElement("div");
@@ -14,21 +14,35 @@ const divElements = () => {
     </form>
     </div>  
   `;
-  
+  const form = printElements.querySelector("form");
+  const insertedName = printElements.querySelector("#input-redefinir-jogador");
+  const printNameGamer = () => {
+    const divNameGamer = document.querySelector("#print-bem-vinde");
+    divNameGamer.innerHTML = `Bem-vinde: ${insertedName.value}`;
+  };
+  insertedName.addEventListener("keypress", printNameGamer);
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+
+
   const btnShuffle = printElements.querySelector("#btn-shuffle");
   btnShuffle.addEventListener("click", (e) => {
     e.preventDefault();
-    shuffle(dataDev);
+    const shuffledItems = shuffle(initialItems);
+    printCards(shuffledItems);
+    console.log(shuffledItems);
+   
   });
   
   return printElements;
 };
 
 
-const printCards = () => {
-  const container = document.createElement("div");
+const printCards = (data) => {
+  const container = document.getElementById("board");
   let allCards = "";
-  dataDev.map((personagem) => {
+  data.map((personagem) => {
     allCards += `
         <div class="quadro-card">
         <div><img class="quadro-imagem" src="${personagem.image}" id="${personagem.id}">
@@ -38,7 +52,7 @@ const printCards = () => {
   });
 
   container.innerHTML = allCards + allCards;
-  return container;
+  
 };
 
-export { printCards, divElements, dataDev };
+export { printCards, divElements, initialItems };
