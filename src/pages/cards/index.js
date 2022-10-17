@@ -15,6 +15,15 @@ const divElements = () => {
     </div>  
   `;
   
+  const insertedName = printElements.querySelector("#input-redefinir-jogador");
+  const printNameGamer = () => {
+    const divNameGamer = document.querySelector("#print-bem-vinde");
+    divNameGamer.innerHTML = `${insertedName.value}`;
+  };
+  insertedName.addEventListener("click", printNameGamer);
+
+
+
   const btnShuffle = printElements.querySelector("#btn-shuffle");
   btnShuffle.addEventListener("click", (e) => {
     e.preventDefault();
