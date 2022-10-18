@@ -32,7 +32,7 @@ const divElements = () => {
     const shuffledItems = shuffle(initialItems);
     printCards(shuffledItems);
   });
-  
+
   return printElements;
 };
 
@@ -42,15 +42,21 @@ const printCards = (data) => {
   let allCards = "";
   data.map((personagem) => {
     allCards += `
-        <div class="quadro-card">
-        <div><img class="quadro-imagem" src="${personagem.image}" id="${personagem.id}">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-back">
+            <img class="img-back" src="./../../images/computador-back-card.png">
+          </div>
+          <div class="flip-card-front">
+            <img class="img-front" src="${personagem.image}" id="${personagem.id}">
+          </div>
         </div>
-        </div>
+      </div>
       `;
   });
 
   container.innerHTML = allCards + allCards;
-  
+
 };
 
 export { printCards, divElements, initialItems };
