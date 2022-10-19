@@ -94,7 +94,7 @@ header {
     transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.rotate-flip-card .flip-card-inner {
     transform: rotateY(180deg);
 }
 

@@ -42,7 +42,7 @@ const printCards = (data) => {
   let allCards = "";
   data.map((personagem) => {
     allCards += `
-      <div class="flip-card">
+      <div data-id=${personagem.id} class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-back">
             <img class="img-back" src="./../../images/computador-back-card.png">
@@ -55,9 +55,19 @@ const printCards = (data) => {
       `;
     });
 
+    container.innerHTML = allCards + allCards;
 
-  container.innerHTML = allCards + allCards;
+    const clickFlipCard = container.querySelectorAll(".flip-card");
+    clickFlipCard.forEach((item) => {
+      item.addEventListener("click", () => {        
+        item.classList.add("rotate-flip-card");
+      });
+    });
 };
+
+/*se o id for igual aplico isso: document.querySelectorAll(`[data-id="${id}"]`).style.pointerEvents = 'none'*/
+
+
 
 
 export { printCards, divElements, initialItems };
