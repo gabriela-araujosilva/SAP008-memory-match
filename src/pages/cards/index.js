@@ -8,16 +8,16 @@ const divElements = () => {
   printElements.innerHTML = `
    <div class="elementos-container">
     <button type="button" class="btn" id="btn-shuffle">Jogar Novamente</button>
-     <form>
+     <form class="redefinir-jogador">
           <label class="text-redefinir-jogador">Redefinir jogador</label>
-          <input type="text" id="input-redefinir-jogador"/>
-    </form>
-    </div>  
+          <input class="input-redefinir-jogador" type="text" id="input-redefinir-jogador"/>
+        </form>
+      </div>  
   `;
   const form = printElements.querySelector("form");
   const insertedName = printElements.querySelector("#input-redefinir-jogador");
   const printNameGamer = () => {
-    const divNameGamer = document.querySelector("#print-bem-vinde");
+  const divNameGamer = document.querySelector("#print-bem-vinde");
     divNameGamer.innerHTML = `Bem-vinde: ${insertedName.value}`;
   };
   insertedName.addEventListener("keypress", printNameGamer);
@@ -53,10 +53,11 @@ const printCards = (data) => {
         </div>
       </div>
       `;
-  });
+    });
+
 
   container.innerHTML = allCards + allCards;
-
 };
+
 
 export { printCards, divElements, initialItems };
