@@ -43,7 +43,8 @@ const printCards = (data) => {
   data.map((personagem) => {
     allCards += `
         <div class="quadro-card">
-        <div><img class="quadro-imagem" src="${personagem.image}" id="${personagem.id}">
+        <div>
+        <img class="quadro-imagem" src="${personagem.image}" id="${personagem.id}">
         </div>
         </div>
       `;
