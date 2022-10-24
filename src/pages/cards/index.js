@@ -1,5 +1,5 @@
 import data from "./../../data/webdev/webdev.js";
-import { shuffle } from "../logic.js";
+import { shuffle, createDeckFrom } from "../logic.js";
 
 const initialItems = data.items;
 let firstCardId = "";
@@ -38,7 +38,7 @@ const divElements = () => {
   const btnShuffle = printElements.querySelector("#btn-shuffle");
   btnShuffle.addEventListener("click", (e) => {
     e.preventDefault();
-    const shuffledItems = shuffle(initialItems);
+    const shuffledItems = shuffle(createDeckFrom(initialItems));
     printCards(shuffledItems);
     
     firstCardId = "";
@@ -73,7 +73,7 @@ const printCards = (data) => {
       `;
     });
 
-    container.innerHTML = allCards + allCards;
+    container.innerHTML = allCards;
 
     const clickFlipCard = container.querySelectorAll(".flip-card");
     clickFlipCard.forEach((item) => {

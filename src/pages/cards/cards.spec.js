@@ -1,4 +1,4 @@
-import {divElements} from "../pages/cards/index.js";
+import {divElements} from "./index.js";
 
 describe("divElements", () => {
   it("should render without crashing", () => {
