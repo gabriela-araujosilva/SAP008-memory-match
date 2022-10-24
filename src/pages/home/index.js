@@ -14,12 +14,13 @@ const elementsHome = () => {
     printHome.innerHTML = `
      <div class="elementos-container-home">
        <form class="definir-jogador">
-            <label class="text-definir-jogador">Insira seu nome abaixo</label>
-            <input class="input-definir-jogador" type="text" id="input-definir-jogador"/>
+          <label class="text-definir-jogador">Insira seu nome abaixo</label>
+          <input class="input-definir-jogador" type="text" id="input-definir-jogador"/>
+          <a href="/#card">
             <button type="button" class="btn-iniciar" id="btn-iniciar">Iniciar Partida</button>
-          </form>
-          
-        </div>  
+          </a>
+        </form>
+      </div>  
     `;
 
   const form = printHome.querySelector("form");
