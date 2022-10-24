@@ -56,7 +56,7 @@ const divElements = () => {
 
 
 const printCards = (data) => {
-  const container = document.getElementById("board");
+  const container = document.getElementById("root");
   let allCards = "";
   data.map((personagem) => {
     allCards += `

@@ -8,10 +8,11 @@ const init = () => {
     window.addEventListener("hashchange", () => {
         switch(window.location.hash){
             case "#card":
-                main.prepend(divElements());
+                main.innerHTML="";
                 printCards(initialItems);
+                main.prepend(divElements());
                 break;
-            case " ":
+            case "":
                 main.appendChild(homeText());
                 main.appendChild(elementsHome());
                 break;    
