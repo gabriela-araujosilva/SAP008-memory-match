@@ -2,6 +2,15 @@ import data from "./../../data/webdev/webdev.js";
 import { shuffle } from "../logic.js";
 
 const initialItems = data.items;
+let firstCardId = "";
+let secondCardId = "";
+
+let firstCardItem;
+let secondCardItem;
+
+let score = 0;
+
+let enabled = true;
 
 const divElements = () => {
   const printElements = document.createElement("div");
@@ -31,6 +40,15 @@ const divElements = () => {
     e.preventDefault();
     const shuffledItems = shuffle(initialItems);
     printCards(shuffledItems);
+    
+    firstCardId = "";
+    secondCardId = undefined;
+
+    secondCardId = "";
+    secondCardItem = undefined;
+
+    enabled = true;
+    score = 0;
   });
 
   return printElements;
@@ -59,15 +77,52 @@ const printCards = (data) => {
 
     const clickFlipCard = container.querySelectorAll(".flip-card");
     clickFlipCard.forEach((item) => {
-      item.addEventListener("click", () => {        
+      item.addEventListener("click", () => {       
+
+        if(enabled){
         item.classList.add("rotate-flip-card");
+        const characterId = item.getAttribute("data-id");
+
+        if(firstCardId === ""){
+          firstCardId = characterId;
+          firstCardItem = item;
+        } else {
+          secondCardId = characterId;
+          secondCardItem = item;
+        }
+        if (firstCardId !== "" && secondCardId !== ""){
+          enabled = false;
+          setTimeout(()=>{
+            matchCard();
+          }, 1000);
+        }
+        }
+        
       });
     });
 };
 
-/*se o id for igual aplico isso: document.querySelectorAll(`[data-id="${id}"]`).style.pointerEvents = 'none'*/
+const matchCard = () => {
+  if(firstCardId !== secondCardId){
+    firstCardItem.classList.remove("rotate-flip-card");
+    secondCardItem.classList.remove("rotate-flip-card");
+  } else {
+    score++;
 
+    if(score === 10){
+      alert("Parabéns! Você ganhou...");
+    }
+  }
+  firstCardId = "";
+  firstCardItem = undefined;
 
+  secondCardId = "";
+  secondCardItem = undefined;
 
+  enabled = true;
+};
 
 export { printCards, divElements, initialItems };
+
+
+
