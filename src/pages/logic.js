@@ -5,7 +5,7 @@ export const shuffle = (array) => {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
         [shuffled[currentIndex], shuffled[randomIndex]] = [
-          array[randomIndex], array[currentIndex]];
+          shuffled[randomIndex], shuffled[currentIndex]];
       }
     
     return shuffled;

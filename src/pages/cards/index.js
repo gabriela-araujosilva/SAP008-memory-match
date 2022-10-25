@@ -1,5 +1,5 @@
 import data from "./../../data/webdev/webdev.js";
-import { shuffle } from "../logic.js";
+import { createDeckFrom, shuffle } from "../logic.js";
 
 const initialItems = data.items;
 let firstCardId = "";
@@ -41,9 +41,11 @@ const divElements = () => {
 
 
   const btnShuffle = printElements.querySelector("#btn-shuffle");
+  console.log(btnShuffle);
   btnShuffle.addEventListener("click", (e) => {
-    e.preventDefault();
-    const shuffledItems = shuffle(initialItems);
+    console.log("click");
+   /* e.preventDefault();
+    const shuffledItems = shuffle(createDeckFrom(initialItems));
     printCards(shuffledItems);
 
     firstCardId = "";
@@ -53,7 +55,7 @@ const divElements = () => {
     secondCardItem = undefined;
 
     enabled = true;
-    score = 0;
+    score = 0;*/
   });
 
   return printElements;
