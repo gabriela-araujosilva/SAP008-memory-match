@@ -1,5 +1,5 @@
 import data from "./../../data/webdev/webdev.js";
-import { shuffle, createDeckFrom } from "../logic.js";
+import { shuffle } from "../logic.js";
 
 const initialItems = data.items;
 let firstCardId = "";
@@ -14,22 +14,27 @@ let enabled = true;
 
 const divElements = () => {
   const printElements = document.createElement("div");
+
   printElements.innerHTML = `
-   <div class="elementos-container">
-    <button type="button" class="btn" id="btn-shuffle">Jogar Novamente</button>
-     <form class="redefinir-jogador">
-          <label class="text-redefinir-jogador">Redefinir jogador</label>
-          <input class="input-redefinir-jogador" type="text" id="input-redefinir-jogador"/>
-        </form>
-      </div>  
+    <div class="elementos-container">
+      <button type="button" class="btn" id="btn-shuffle">Jogar Novamente</button>
+      <form class="redefinir-jogador">
+        <label class="text-redefinir-jogador">Redefinir jogador</label>
+        <input class="input-redefinir-jogador" type="text" id="input-redefinir-jogador"/>
+      </form>
+    </div>  
   `;
+
   const form = printElements.querySelector("form");
   const insertedName = printElements.querySelector("#input-redefinir-jogador");
+
   const printNameGamer = () => {
-  const divNameGamer = document.querySelector("#print-bem-vinde");
+    const divNameGamer = document.querySelector("#print-bem-vinde");
     divNameGamer.innerHTML = `Bem-vinde: ${insertedName.value}`;
   };
+
   insertedName.addEventListener("keypress", printNameGamer);
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
   });
@@ -38,9 +43,9 @@ const divElements = () => {
   const btnShuffle = printElements.querySelector("#btn-shuffle");
   btnShuffle.addEventListener("click", (e) => {
     e.preventDefault();
-    const shuffledItems = shuffle(createDeckFrom(initialItems));
+    const shuffledItems = shuffle(initialItems);
     printCards(shuffledItems);
-    
+
     firstCardId = "";
     secondCardId = undefined;
 
@@ -71,45 +76,44 @@ const printCards = (data) => {
         </div>
       </div>
       `;
-    });
+  });
 
-    container.innerHTML = allCards;
+  container.innerHTML += allCards;
 
-    const clickFlipCard = container.querySelectorAll(".flip-card");
-    clickFlipCard.forEach((item) => {
-      item.addEventListener("click", () => {       
+  const clickFlipCard = container.querySelectorAll(".flip-card");
+  clickFlipCard.forEach((item) => {
+    item.addEventListener("click", () => {
 
-        if(enabled){
+      if (enabled) {
         item.classList.add("rotate-flip-card");
         const characterId = item.getAttribute("data-id");
 
-        if(firstCardId === ""){
+        if (firstCardId === "") {
           firstCardId = characterId;
           firstCardItem = item;
         } else {
           secondCardId = characterId;
           secondCardItem = item;
         }
-        if (firstCardId !== "" && secondCardId !== ""){
+        if (firstCardId !== "" && secondCardId !== "") {
           enabled = false;
-          setTimeout(()=>{
+          setTimeout(() => {
             matchCard();
           }, 1000);
         }
-        }
-        
-      });
+      }
     });
+  });
 };
 
 const matchCard = () => {
-  if(firstCardId !== secondCardId){
+  if (firstCardId !== secondCardId) {
     firstCardItem.classList.remove("rotate-flip-card");
     secondCardItem.classList.remove("rotate-flip-card");
   } else {
     score++;
 
-    if(score === 10){
+    if (score === 10) {
       alert("Parabéns! Você ganhou...");
     }
   }

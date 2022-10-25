@@ -9,8 +9,8 @@ const init = () => {
         switch(window.location.hash){
             case "#card":
                 main.innerHTML="";
-                printCards(initialItems);
                 main.prepend(divElements());
+                printCards(initialItems);
                 break;
             case "":
                 main.appendChild(homeText());
