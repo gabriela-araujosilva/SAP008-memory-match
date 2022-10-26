@@ -34,17 +34,14 @@ const divElements = () => {
   };
 
   insertedName.addEventListener("keypress", printNameGamer);
-
   form.addEventListener("submit", (e) => {
     e.preventDefault();
   });
 
 
   const btnShuffle = printElements.querySelector("#btn-shuffle");
-  console.log(btnShuffle);
   btnShuffle.addEventListener("click", (e) => {
-    console.log("click");
-   /* e.preventDefault();
+    e.preventDefault();
     const shuffledItems = shuffle(createDeckFrom(initialItems));
     printCards(shuffledItems);
 
@@ -55,7 +52,7 @@ const divElements = () => {
     secondCardItem = undefined;
 
     enabled = true;
-    score = 0;*/
+    score = 0;
   });
 
   return printElements;
@@ -63,7 +60,7 @@ const divElements = () => {
 
 
 const printCards = (data) => {
-  const container = document.getElementById("root");
+  const container = document.getElementById("board");
   let allCards = "";
   data.map((personagem) => {
     allCards += `
@@ -80,7 +77,7 @@ const printCards = (data) => {
       `;
   });
 
-  container.innerHTML += allCards;
+  container.innerHTML = allCards;
 
   const clickFlipCard = container.querySelectorAll(".flip-card");
   clickFlipCard.forEach((item) => {
