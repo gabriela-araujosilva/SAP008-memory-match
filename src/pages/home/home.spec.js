@@ -1,4 +1,4 @@
-import {elementsHome} from "./index";
+import {elementsHome, elementsText} from "./index";
 
 describe("elementsHome", () => {
   it("should render without crashing", () => {
@@ -6,4 +6,12 @@ describe("elementsHome", () => {
     expect(el instanceof HTMLElement).toBe(true);
   });
 });
+
+describe("elementsText", () => {
+  it("should render without crashing", () => {
+    const el = elementsText();
+    expect(el instanceof HTMLElement).toBe(true);
+  });
+});
+
 
