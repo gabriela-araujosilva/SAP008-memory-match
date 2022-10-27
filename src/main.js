@@ -5,12 +5,15 @@ import { createDeckFrom, shuffle } from "./pages/logic.js";
 
 
 const main = document.querySelector("#root");
+const board = document.querySelector("#board");
 
 const init = () => {
     window.addEventListener("hashchange", () => {
+        main.innerHTML="";
+        board.innerHTML="";
         switch (window.location.hash) {
             case "#card":
-                main.prepend(divElements());
+                main.appendChild(divElements());
                 printCards(shuffle(createDeckFrom(initialItems)));
                 break;
             case "":
