@@ -12,9 +12,11 @@ header {
     justify-content: space-between;
 }
 
+
+
 .texto-header {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #c5cfc6;
     padding-right: 8rem;
 }
@@ -22,19 +24,23 @@ header {
 .elementos-container {
     display: flex;
     flex-flow: wrap;
-    justify-content:space-around;
+    justify-content:center;
     margin-top: 2rem;
+    gap: 100px;
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0.5rem;
-    width: 15%;
-    height: 10%;
+    width: 110px;
+    height: 50px;
     margin-left: 0.3rem;
     border-width: 3px;
     border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     color: black;
     cursor: pointer;
@@ -50,12 +56,12 @@ header {
 
 .input-redefinir-jogador {
     background-color: #c5cfc6;
-    width: 90%;
-    height: 30%;
+    width: 250px;
+    height: 20px;
     margin-top: 0.3rem;
     border-width: 3px;
     border-radius: 10px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.3rem;
@@ -63,7 +69,7 @@ header {
 
 .text-redefinir-jogador {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: black;
 }
 
@@ -145,7 +151,7 @@ footer {
     padding: 0.2rem;
     width: 140px;
     height: 40px;
-    margin-top: 2%;
+    margin-top: 10px;
     border-width: 3px;
     border-radius: 5px;
     font-size: 1rem;
