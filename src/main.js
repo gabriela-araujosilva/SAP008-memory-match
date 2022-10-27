@@ -16,7 +16,7 @@ const init = () => {
                 main.appendChild(divElements());
                 printCards(shuffle(createDeckFrom(initialItems)));
                 break;
-            case "#":
+            case "":
                 main.appendChild(elementsText());
                 main.appendChild(elementsHome());
                 break;
