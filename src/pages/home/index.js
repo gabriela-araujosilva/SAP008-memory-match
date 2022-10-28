@@ -17,7 +17,7 @@ const elementsHome = () => {
        <form class="definir-jogador">
           <label class="text-definir-jogador">Insira seu nome abaixo</label>
           <input class="input-definir-jogador" type="text" id="input-definir-jogador"/>
-          <a href="/#card">
+          <a href="#card">
             <button type="button" class="btn-iniciar" id="btn-iniciar">Iniciar Partida</button>
           </a>
         </form>
