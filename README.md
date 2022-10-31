@@ -47,7 +47,11 @@ O nome do jogo é "Memory:none;" e o tema escolhido é o universo Tech/Dev, assi
 ### 3.4 Paleta de cores
 ![](paleta_de_cores.png)
 
+### 3.5 Teste de usabilidade
+Nós criamos uma navegação entre telas e atribuimos ações nos botões dos protótipos de alta fidelidade. Enviamos essa primeira versão para 2 usuários testarem a fluidez e a intuitivade, tanto na tela mobile quanto na tela desktop.
+Recebemos como feedback o pedido de implementar uma forma mais clara de possibilidade de voltar para a página inicial, que antes se dava apenas pela logo no cabeçalho. Atendemos o pedido dos usuários e concluímos o design e as ações de cada componente.
 ## 4. Testes unitários
+
 
 ## 5. Objetivos de aprendizagem
 
