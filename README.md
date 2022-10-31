@@ -18,7 +18,7 @@ que uma jogadora possa jogar sozinha no navegador.
 O objetivo principal deste projeto é aprender a desenhar e construir uma
 interface web baseada em data e interação com a usuária.
 
-O tema escolhido paro o jogo é o universo Tech/Dev, assim, o jogador poderá ter contato com diversos tipos de linguagens e ferramentas do mundo da programação. O objetivo do jogo é aproximar e divertir tanto profissionais e estudantes do mundo tech como pessoas curiosas sobre a área.
+O nome do jogo é "Memory:none;" e tema escolhido é o universo Tech/Dev, assim, o jogador poderá ter contato com diversos tipos de linguagens e ferramentas do mundo da programação. O objetivo do jogo é aproximar e divertir tanto profissionais e estudantes do mundo tech como pessoas curiosas sobre a área.
 
 ### Histórias de usuário
 
@@ -90,16 +90,17 @@ Na construção desse projeto a equipe trabalhou com as seguintes linguagens e f
 - **GitHub: Criação de contas e repositórios, configuração de chave SSH**
 - **GitHub: Implantação com GitHub Pages**
 - **GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**
-### user-centricity
+  
+### User-centricity
 - **Desenhar a aplicação pensando e entendendo a usuária**
 
-### product-design
+### Product-design
 
 - **Criar protótipos para obter feedback e iterar**
 
 - **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
 
-### research
+### Research
 
 - **Planejar e executar testes de usabilidade**
 
