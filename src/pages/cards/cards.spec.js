@@ -26,8 +26,19 @@ describe("printCards", () => {
     expect(cards[0].classList.contains("rotate-flip-card")).toEqual(false);
     cards[0].click();
     expect(cards[0].classList.contains("rotate-flip-card")).toEqual(true);
-    
   });
+
+  it("should play game two", () => {
+    const array = [{imagem: "1", id: "2",}, {imagem: "2", id: "3"}];
+    document.body.innerHTML="<div id='board'></div>";
+    printCards(array);
+    const cards = document.querySelectorAll(".flip-card");
+    expect(cards[1].classList.contains("rotate-flip-card")).toEqual(false);
+    cards[1].click();
+    expect(cards[1].classList.contains("rotate-flip-card")).toEqual(true);
+  });
+
+
 });
 
 
