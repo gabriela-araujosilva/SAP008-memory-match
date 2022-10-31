@@ -18,7 +18,7 @@ que uma jogadora possa jogar sozinha no navegador.
 O objetivo principal deste projeto é aprender a desenhar e construir uma
 interface web baseada em data e interação com a usuária.
 
-O nome do jogo é "Memory:none;" e tema escolhido é o universo Tech/Dev, assim, o jogador poderá ter contato com diversos tipos de linguagens e ferramentas do mundo da programação. O objetivo do jogo é aproximar e divertir tanto profissionais e estudantes do mundo tech como pessoas curiosas sobre a área.
+O nome do jogo é "Memory:none;" e o tema escolhido é o universo Tech/Dev, assim, o jogador poderá ter contato com diversos tipos de linguagens e ferramentas do mundo da programação. O objetivo do jogo é aproximar e divertir tanto profissionais e estudantes do mundo tech como pessoas curiosas sobre a área.
 
 ### Histórias de usuário
 
