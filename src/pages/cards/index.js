@@ -62,7 +62,7 @@ const divElements = () => {
 const printCards = (data) => {
   const container = document.getElementById("board");
   let allCards = "";
-  data.map((personagem) => {
+  data.forEach((personagem) => {
     allCards += `
       <div data-id=${personagem.id} class="flip-card">
         <div class="flip-card-inner">
