@@ -1,4 +1,4 @@
-import {elementsHome, elementsText} from "./index";
+import { elementsHome, elementsText } from "./index";
 
 describe("elementsHome", () => {
   it("should render without crashing", () => {

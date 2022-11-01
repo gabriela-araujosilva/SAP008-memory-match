@@ -9,8 +9,8 @@ const board = document.querySelector("#board");
 
 const init = () => {
     window.addEventListener("hashchange", () => {
-        main.innerHTML="";
-        board.innerHTML="";
+        main.innerHTML = "";
+        board.innerHTML = "";
         switch (window.location.hash) {
             case "#card":
                 main.appendChild(divElements());

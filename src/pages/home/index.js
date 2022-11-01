@@ -7,7 +7,7 @@ const elementsText = () => {
     </div>
     `;
   return textHome;
-  
+
 };
 
 const elementsHome = () => {
