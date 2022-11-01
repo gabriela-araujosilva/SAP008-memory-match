@@ -62,15 +62,15 @@ const divElements = () => {
 const printCards = (data) => {
   const container = document.getElementById("board");
   let allCards = "";
-  data.forEach((personagem) => {
+  data.forEach((itens) => {
     allCards += `
-      <div data-id=${personagem.id} class="flip-card">
+      <div data-id=${itens.id} class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-back">
             <img class="img-back" src="./../../images/computador-back-card.png">
           </div>
           <div class="flip-card-front">
-            <img class="img-front" src="${personagem.image}" id="${personagem.id}">
+            <img class="img-front" src="${itens.image}" id="${itens.id}">
           </div>
         </div>
       </div>
